@@ -19,14 +19,15 @@
             }
             .reveal .slides section .fragment.hadouken{
                 display: none;
+                background: none;
+                border:none;
+                box-shadow: none;
             }
             .hadouken{
                 position: fixed;
                 top: 46%;
                 left: -5%;
                 z-index:9999;
-
-
             }
         </style>
 		<link rel="stylesheet" href="css/reveal.min.css">
@@ -159,9 +160,7 @@ console.log(' Hello ');
                 </section>
                 <section>
                     <h1>Callback hell</h1>
-
-
-                        <img class="hadouken no_bg fragment fade-in " src="img/180px-Ryu_Hadouken_sprite.png" alt=""/>
+                    <img data-fragment-index="2" class="hadouken no_bg fragment fade-in " src="img/180px-Ryu_Hadouken_sprite.png" alt=""/>
 
 <pre><code class="javascript">doAsync1(function (err, data) {
     doAsync2(data, function (err, data2) {
@@ -177,17 +176,13 @@ console.log(' Hello ');
     });
 });
 </code></pre>
-
-</section>
-                <section>
-                    <h1>Callback hell</h1>
-
-                    <div class="fragment">
-                        <img class="no_bg" src="img/code_hadouken.png" alt=""/>
-
-                        <p>... Ou código orientado a Hadouken! </p>
-                    </div>
+                    <p data-fragment-index="1" class="fragment">... Ou código orientado a Hadouken! </p>
                 </section>
+
+                <section>
+                    <h2>Erro não tratado mata thread...</h2>
+                </section>
+
                 <section>
                     <h3>Dúvidas?</h3>
                 </section>
