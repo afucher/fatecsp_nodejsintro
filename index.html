@@ -13,7 +13,22 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+            .reveal .slides section .fragment.visible.hadouken{
+                display: inherit;
+            }
+            .reveal .slides section .fragment.hadouken{
+                display: none;
+            }
+            .hadouken{
+                position: fixed;
+                top: 46%;
+                left: -5%;
+                z-index:9999;
 
+
+            }
+        </style>
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
@@ -30,6 +45,8 @@
 				document.getElementsByTagName( 'head' )[0].appendChild( link );
 			}
 		</script>
+
+
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -114,7 +131,7 @@ console.log(' Hello ');
                 <section>
                     <section>
                         <h1>Non-blocking I/O</h1>
-                        <h4>Exemplos a seguir retirados da apresentação de <a href="http://pt.slideshare.net/PedroFranceschi/palestra-nodejs">Pedro Franceschi</a>.</h4>
+                        <h4>Exemplos a seguir retirados da apresentação do <a href="http://pt.slideshare.net/PedroFranceschi/palestra-nodejs">Pedro Franceschi</a>.</h4>
                     </section>
                     <section>
                         <img src="img/IO_sync.png" alt="I/O sync"/>
@@ -136,7 +153,41 @@ console.log(' Hello ');
                         <p>Em 9 segundos, teremos 1 thread!</p>
                     </section>
                 </section>
+                <section>
+                    <h2>Pô, vou começar a fazer tudo em node ;)</h2>
+                    <h1 class="fragment fade-in">#sqn</h1>
+                </section>
+                <section>
+                    <h1>Callback hell</h1>
 
+
+                        <img class="hadouken no_bg fragment fade-in " src="img/180px-Ryu_Hadouken_sprite.png" alt=""/>
+
+<pre><code class="javascript">doAsync1(function (err, data) {
+    doAsync2(data, function (err, data2) {
+        doAsync3(data2, function (err, data3) {
+            doAsync4(data3, function (err, data4) {
+                doAsync5(data4, function (err, data5) {
+                    doAsync6(data5, function (err, data6) {
+                        //Do some stuff...
+                    });
+                });
+            });
+        });
+    });
+});
+</code></pre>
+
+</section>
+                <section>
+                    <h1>Callback hell</h1>
+
+                    <div class="fragment">
+                        <img class="no_bg" src="img/code_hadouken.png" alt=""/>
+
+                        <p>... Ou código orientado a Hadouken! </p>
+                    </div>
+                </section>
                 <section>
                     <h3>Dúvidas?</h3>
                 </section>
