@@ -48,17 +48,100 @@
 						<small>Created by <a href="http://arthurfucher.wix.com/self">Arthur Fücher</a> / <a href="http://twitter.com/thur">@thur</a></small>
 					</p>
 				</section>
-                <section>
+                <section >
                     <h2>About...me</h2>
-                    <p class="fragment">Arthur Fücher</p>
-                    <p class="fragment">ADS</p>
-                    <p class="fragment">TOTVS <span class="fragment"> - Framework SP</span></p>
+                    <p>Arthur Fücher</p>
+                    <p>FATEC SP - ADS</p>
+                    <p>TOTVS - Framework SP</p>
                 </section>
                 <section>
                     <a href="http://nodejs.org">
                         <img class="no_bg" width="600" height="400" src="img/logo.svg" alt="Node.js LOGO">
                     </a>
+                    <blockquote>"Node.js® is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications"</blockquote>
                 </section>
+                <section>
+                    <h1>História</h1>
+                    <ul>
+                        <li class="fragment fade-in">2009 - Ryan Dahl apresenta na JSConf</li>
+                        <li class="fragment fade-in">2010 - Popularidade</li>
+                        <li class="fragment fade-in">2011 - NPM (Node packaged modules)</li>
+                        <li class="fragment fade-in">2014 - "bug fixing, performance tuning, staying up to date with the V8 engine and tooling"</li>
+                        </br>
+                        <p class="fragment fade-in">
+                            <strong>OpenSource: </strong>
+                            <a href="http://github.com/joyent/node" target="_blank">github.com/joyent/node</a>
+                        </p>
+                    </ul>
+                </section>
+                <section>
+                    <section>
+                        <h1>Instalando</h1>
+                        <p>Multiplataforma (Windows, Mac e Linux)</p>
+                        <p>
+                            <a href="http://nodejs.org/download/">http://nodejs.org/download/</a>
+                        </p>
+                        <br/>
+                        <p>...</p>
+                        <br/>
+                        <p>
+                            <a href="https://github.com/creationix/nvm"><u>N</u>ode <u>V</u>ersion <u>M</u>anager</a> - Linux/Mac Only
+                        </p>
+                    </section>
+                    <section>
+                        <h1>REPL</h1>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Single thread event-loop</h2>
+                    <h2>Asynchronous</h2>
+                    <h2>Non-blocking I/O</h2>
+                </section>
+                <section>
+                    <h1>Event-loop</h1>
+                    <img class="no_bg" src="img/event-loop.png">
+                </section>
+                <section>
+                    <h1>Async</h1>
+                </section>
+                <section>
+                    <section>
+                        <h1>Non-blocking I/O</h1>
+                        <h4>Exemplos a seguir retirados da apresentação de <a href="http://pt.slideshare.net/PedroFranceschi/palestra-nodejs">Pedro Franceschi</a>.</h4>
+                    </section>
+                    <section>
+                        <img src="img/IO_sync.png" alt="I/O sync"/>
+                    </section>
+                    <section>
+                        <img src="img/IO_thread.png" alt="I/O thread"/>
+                    </section>
+                    <section>
+                        <p>1.000 requests por segundo com conexão a uma API externa + I/O no DB = 1.000 threads por segundo</p>
+                        <p>... se cada request leva em média 10 segundos ...</p>
+                        <p>Em 9 segundos, teremos 9.000 threads!</p>
+                    </section>
+                    <section>
+                        <img src="img/IO_nonblocking.png" alt="I/O assync"/>
+                    </section>
+                    <section>
+                        <p>1.000 requests por segundo com conexão a uma API externa + I/O no DB = 1 thread por segundo</p>
+                        <p>... se cada request leva em média 10 segundos ...</p>
+                        <p>Em 9 segundos, teremos 1 thread!</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h3>Dúvidas?</h3>
+                </section>
+                
+                <section>
+                    <h2>Contatos</h2>
+                    <p>Twitter: <a href="http:\\twitter.com\thur" target="_blank">@thur</a></p>
+                    <p>Github: <a href="http:\\github.com\afucher" target="_blank">afucher</a></p>
+                    <p>Email: arthurfucher@gmail.com</p>
+                </section>
+
 			</div>
 
 		</div>
